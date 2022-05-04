@@ -13,7 +13,7 @@ $objDb = new DbConnect;
 $conn = $objDb->connect();
 
 
- $method = $_SERVER['REQUEST_METHOD'];
+ $method = $_SERVER['DOCUMENT_ROOT'];
  switch($method) {
   case "POST" : 
       $product = json_decode(file_get_contents("php://input"));
