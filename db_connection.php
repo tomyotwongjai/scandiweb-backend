@@ -4,10 +4,14 @@
  */
 
  class DbConnect {
-      private $DB_HOST = 'remotemysql.com'; 
-      private $DB_NAME =  'D0eR4bv7ru';
-      private $DB_USER = 'D0eR4bv7ru';
-      private $DB_PASSWORD = 'gjW8jmZnMP';
+
+  // local development
+  
+   private $DB_HOST = 'localhost';
+    private $DB_USER = 'root';
+    private $DB_PASSWORD = '';
+    private $DB_NAME = 'scandi-crud';
+
 
       public function connect() {
         try {
